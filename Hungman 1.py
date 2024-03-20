@@ -16,16 +16,5 @@ while chances > 0:
  else:
      chances -= 1
      print("Better luck next time. You have {} chances left.".format(chances))
-
- display = ""
- for letter in secretWord:
-   if letter.lower() in guessed_letters:
-      display += letter
-   else:
-      display += "_"
-     print(display)
- if "_" not in display:
-     print("Congratulations! You guessed the word:", secretWord)
- break
 if chances == 0:
      print("Sorry, you ran out of chances. The word was:", secretWord)    
